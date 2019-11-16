@@ -48,5 +48,11 @@ namespace EfeitoApoena
             FormCadastro.ShowDialog();
 
         }
+
+        private void btnAcompanhamento_Click(object sender, EventArgs e)
+        {
+            Menu03_acompanhamento FormCadastro = new Menu03_acompanhamento();
+            FormCadastro.ShowDialog();
+        }
     }
 }

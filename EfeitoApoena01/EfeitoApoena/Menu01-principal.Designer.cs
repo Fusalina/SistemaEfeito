@@ -123,6 +123,7 @@
             this.btnAcompanhamento.Text = "acompanhamento";
             this.btnAcompanhamento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAcompanhamento.UseVisualStyleBackColor = true;
+            this.btnAcompanhamento.Click += new System.EventHandler(this.btnAcompanhamento_Click);
             // 
             // btnFinan
             // 
