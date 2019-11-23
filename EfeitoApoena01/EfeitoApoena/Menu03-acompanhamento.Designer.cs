@@ -36,6 +36,7 @@
             this.btnNtreino = new System.Windows.Forms.Button();
             this.btnAvaliac = new System.Windows.Forms.Button();
             this.btnConmpare = new System.Windows.Forms.Button();
+            this.btnSelAlunoAcomp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -282,7 +283,7 @@
             this.txtbNomeBusca.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.txtbNomeBusca.Location = new System.Drawing.Point(18, 70);
             this.txtbNomeBusca.Name = "txtbNomeBusca";
-            this.txtbNomeBusca.Size = new System.Drawing.Size(555, 24);
+            this.txtbNomeBusca.Size = new System.Drawing.Size(414, 24);
             this.txtbNomeBusca.TabIndex = 7;
             // 
             // btnNtreino
@@ -291,7 +292,7 @@
             this.btnNtreino.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNtreino.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNtreino.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnNtreino.Location = new System.Drawing.Point(18, 127);
+            this.btnNtreino.Location = new System.Drawing.Point(12, 178);
             this.btnNtreino.Name = "btnNtreino";
             this.btnNtreino.Size = new System.Drawing.Size(555, 50);
             this.btnNtreino.TabIndex = 8;
@@ -305,7 +306,7 @@
             this.btnAvaliac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAvaliac.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAvaliac.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnAvaliac.Location = new System.Drawing.Point(18, 183);
+            this.btnAvaliac.Location = new System.Drawing.Point(12, 234);
             this.btnAvaliac.Name = "btnAvaliac";
             this.btnAvaliac.Size = new System.Drawing.Size(555, 50);
             this.btnAvaliac.TabIndex = 9;
@@ -319,7 +320,7 @@
             this.btnConmpare.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConmpare.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConmpare.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnConmpare.Location = new System.Drawing.Point(18, 239);
+            this.btnConmpare.Location = new System.Drawing.Point(12, 290);
             this.btnConmpare.Name = "btnConmpare";
             this.btnConmpare.Size = new System.Drawing.Size(555, 50);
             this.btnConmpare.TabIndex = 10;
@@ -327,11 +328,25 @@
             this.btnConmpare.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnConmpare.UseVisualStyleBackColor = true;
             // 
+            // btnSelAlunoAcomp
+            // 
+            this.btnSelAlunoAcomp.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnSelAlunoAcomp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelAlunoAcomp.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelAlunoAcomp.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnSelAlunoAcomp.Location = new System.Drawing.Point(438, 70);
+            this.btnSelAlunoAcomp.Name = "btnSelAlunoAcomp";
+            this.btnSelAlunoAcomp.Size = new System.Drawing.Size(135, 25);
+            this.btnSelAlunoAcomp.TabIndex = 11;
+            this.btnSelAlunoAcomp.Text = "selecionar aluno";
+            this.btnSelAlunoAcomp.UseVisualStyleBackColor = false;
+            // 
             // Menu03_acompanhamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSelAlunoAcomp);
             this.Controls.Add(this.btnConmpare);
             this.Controls.Add(this.btnAvaliac);
             this.Controls.Add(this.btnNtreino);
@@ -359,5 +374,6 @@
         private System.Windows.Forms.Button btnNtreino;
         private System.Windows.Forms.Button btnAvaliac;
         private System.Windows.Forms.Button btnConmpare;
+        private System.Windows.Forms.Button btnSelAlunoAcomp;
     }
 }
