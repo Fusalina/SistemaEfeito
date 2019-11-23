@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//Adição das bibliotecas de banco de dados
+using Npgsql;
+using NpgsqlTypes;
+
 namespace EfeitoApoena
 {
     public partial class Menu02_cadastro : Form
@@ -33,6 +37,11 @@ namespace EfeitoApoena
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Menu02_cadastro_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

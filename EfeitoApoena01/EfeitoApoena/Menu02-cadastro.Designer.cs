@@ -44,10 +44,10 @@
             this.rbtnHomem = new System.Windows.Forms.RadioButton();
             this.rbtnMulher = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rbtnTipoB = new System.Windows.Forms.RadioButton();
-            this.rbtnTipoA = new System.Windows.Forms.RadioButton();
             this.rbtnTipoAB = new System.Windows.Forms.RadioButton();
             this.rbtnTipoO = new System.Windows.Forms.RadioButton();
+            this.rbtnTipoB = new System.Windows.Forms.RadioButton();
+            this.rbtnTipoA = new System.Windows.Forms.RadioButton();
             this.rbtnNegativo = new System.Windows.Forms.RadioButton();
             this.rbtnPositivo = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -235,30 +235,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tipo Sanguíneo";
             // 
-            // rbtnTipoB
-            // 
-            this.rbtnTipoB.AutoSize = true;
-            this.rbtnTipoB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnTipoB.Location = new System.Drawing.Point(16, 44);
-            this.rbtnTipoB.Name = "rbtnTipoB";
-            this.rbtnTipoB.Size = new System.Drawing.Size(33, 21);
-            this.rbtnTipoB.TabIndex = 19;
-            this.rbtnTipoB.TabStop = true;
-            this.rbtnTipoB.Text = "B";
-            this.rbtnTipoB.UseVisualStyleBackColor = true;
-            // 
-            // rbtnTipoA
-            // 
-            this.rbtnTipoA.AutoSize = true;
-            this.rbtnTipoA.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnTipoA.Location = new System.Drawing.Point(16, 17);
-            this.rbtnTipoA.Name = "rbtnTipoA";
-            this.rbtnTipoA.Size = new System.Drawing.Size(35, 21);
-            this.rbtnTipoA.TabIndex = 18;
-            this.rbtnTipoA.TabStop = true;
-            this.rbtnTipoA.Text = "A";
-            this.rbtnTipoA.UseVisualStyleBackColor = true;
-            // 
             // rbtnTipoAB
             // 
             this.rbtnTipoAB.AutoSize = true;
@@ -282,6 +258,30 @@
             this.rbtnTipoO.TabStop = true;
             this.rbtnTipoO.Text = "O";
             this.rbtnTipoO.UseVisualStyleBackColor = true;
+            // 
+            // rbtnTipoB
+            // 
+            this.rbtnTipoB.AutoSize = true;
+            this.rbtnTipoB.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnTipoB.Location = new System.Drawing.Point(16, 44);
+            this.rbtnTipoB.Name = "rbtnTipoB";
+            this.rbtnTipoB.Size = new System.Drawing.Size(33, 21);
+            this.rbtnTipoB.TabIndex = 19;
+            this.rbtnTipoB.TabStop = true;
+            this.rbtnTipoB.Text = "B";
+            this.rbtnTipoB.UseVisualStyleBackColor = true;
+            // 
+            // rbtnTipoA
+            // 
+            this.rbtnTipoA.AutoSize = true;
+            this.rbtnTipoA.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnTipoA.Location = new System.Drawing.Point(16, 17);
+            this.rbtnTipoA.Name = "rbtnTipoA";
+            this.rbtnTipoA.Size = new System.Drawing.Size(35, 21);
+            this.rbtnTipoA.TabIndex = 18;
+            this.rbtnTipoA.TabStop = true;
+            this.rbtnTipoA.Text = "A";
+            this.rbtnTipoA.UseVisualStyleBackColor = true;
             // 
             // rbtnNegativo
             // 
@@ -379,6 +379,7 @@
             this.Name = "Menu02_cadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu02_cadastro";
+            this.Load += new System.EventHandler(this.Menu02_cadastro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
