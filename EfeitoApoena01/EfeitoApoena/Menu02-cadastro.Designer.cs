@@ -206,6 +206,7 @@
             this.rbtnHomem.TabStop = true;
             this.rbtnHomem.Text = "Homem";
             this.rbtnHomem.UseVisualStyleBackColor = true;
+            this.rbtnHomem.CheckedChanged += new System.EventHandler(this.rbtnHomem_CheckedChanged);
             // 
             // rbtnMulher
             // 

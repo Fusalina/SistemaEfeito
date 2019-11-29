@@ -41,6 +41,28 @@ namespace EfeitoApoena
 
         private void Menu02_cadastro_Load(object sender, EventArgs e)
         {
+            string connString = @"Host=127.0.0.1;Username=postgres;Password=ifsp;Database=efeitosystem";
+            using (NpgsqlConnection conn = new NpgsqlConnection(connString))
+            {
+                conn.Open();
+                using (NpgsqlCommand cmd = new NpgsqlCommand())
+                {
+                    cmd.Connection = conn;
+
+                    string nome = ;
+                    char sexo = ;
+                    int cpf = ;
+                    string email = ;
+                    string tp_sang = ;
+                    char fator_rh = ;
+                    cmd.CommandText = "insert into PESSOA(NOME,DATA_NASC,SEXO,CPF,EMAIL,TP_SANG,FATOR_RH) values(@nome, @data_nasc, @sexo, @cpf, @email, @tp_sang, @fator_rh); ";
+                }
+            }
+            
+        }
+
+        private void rbtnHomem_CheckedChanged(object sender, EventArgs e)
+        {
 
         }
     }
