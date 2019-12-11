@@ -7,17 +7,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
 
 namespace EfeitoApoena
 {
     public partial class Menu01 : Form
     {
+
+        NpgsqlConnection conexao = new NpgsqlConnection(); // 2 - classe de acesso; precisa ser global
+        string stringConexao; //3 - criação da string para acessar; precisa ser global
+
+
         public Menu01()
         {
             InitializeComponent();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void Menu01_Load(object sender, EventArgs e) { // carregamento da interface
+            stringConexao = "Server = 127.0.0.1; Port = 4107; Database = postgres; User Id = postgres; Password = 123"; // 4 - preenchimento da string
+            conexao.ConnectionString = stringConexao; // 5 - envio da string para a classe de acesso
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e) // botão de fechar
         {
             this.Close();
         }
@@ -27,10 +39,7 @@ namespace EfeitoApoena
 
         }
 
-        private void Menu01_Load(object sender, EventArgs e)
-        {
 
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -55,7 +64,19 @@ namespace EfeitoApoena
             FormCadastro.ShowDialog();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e) {
+        private void logoTeste_Click(object sender, EventArgs e) {
+
+            try { // 6 - tentativa de acesso
+                conexao.Open();
+            }
+            catch {
+                MessageBox.Show("Conexão falhou! Verifique usuário, senha e serviço SQL");
+                conexao.Close();
+            }
+            if (conexao.State.ToString() == "Open") {
+                MessageBox.Show("Conexão realizada com sucesso");
+                conexao.Close();
+            }
 
         }
     }
