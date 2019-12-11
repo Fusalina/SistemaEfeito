@@ -14,8 +14,8 @@ namespace EfeitoApoena
     public partial class Menu01 : Form
     {
 
-        NpgsqlConnection conexao = new NpgsqlConnection(); // 2 - classe de acesso; precisa ser global
-        string stringConexao; //3 - criação da string para acessar; precisa ser global
+        NpgsqlConnection conexao = new NpgsqlConnection(); // classe de acesso; precisa ser global
+        string stringConexao; // criação da string para acessar; precisa ser global
 
 
         public Menu01()
@@ -25,32 +25,22 @@ namespace EfeitoApoena
 
         private void Menu01_Load(object sender, EventArgs e) { // carregamento da interface
             stringConexao = "Server = 127.0.0.1; Port = 4107; Database = postgres; User Id = postgres; Password = 123"; // 4 - preenchimento da string
-            conexao.ConnectionString = stringConexao; // 5 - envio da string para a classe de acesso
+            conexao.ConnectionString = stringConexao; // envio da string para a classe de acesso
 
+        }
+
+
+        private void btnClose_Click(object sender, EventArgs e) { //botão de fechar
+
+            this.Close();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e) // botão de fechar
         {
-            this.Close();
+            
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void button1_Click(object sender, EventArgs e)
         {
             Menu02_cadastro FormCadastro = new Menu02_cadastro();
@@ -79,5 +69,21 @@ namespace EfeitoApoena
             }
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e) {
+
+        }
+
+
+
+        private void button3_Click(object sender, EventArgs e) {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e) {
+
+        }
+
+
     }
 }
