@@ -54,5 +54,9 @@ namespace EfeitoApoena
             Menu03_acompanhamento FormCadastro = new Menu03_acompanhamento();
             FormCadastro.ShowDialog();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e) {
+
+        }
     }
 }
