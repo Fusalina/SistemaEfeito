@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Npgsql;
+using System;
 using System.Windows.Forms;
-using Npgsql;
 
-namespace EfeitoApoena
-{
+namespace EfeitoApoena {
     public partial class Menu01 : Form
     {
 
@@ -47,7 +39,7 @@ namespace EfeitoApoena
             FormCadastro.ShowDialog();
         }
 
-        private void btnFinanceiro_Click(object sender, EventArgs e) { //botão para janela do financeiro
+        private void btnFinanceiro_Click(object sender, EventArgs e) { // botão para janela do financeiro
 
         }
 
@@ -66,6 +58,6 @@ namespace EfeitoApoena
             }
 
         }
-
+        
     }
 }

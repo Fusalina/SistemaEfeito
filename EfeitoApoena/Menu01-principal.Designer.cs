@@ -150,7 +150,6 @@
             this.label1.Size = new System.Drawing.Size(122, 20);
             this.label1.TabIndex = 8;
             this.label1.Text = "sistema efeito";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Menu01
             // 
