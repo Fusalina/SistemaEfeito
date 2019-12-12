@@ -32,8 +32,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.logoTeste = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.imgCapa = new System.Windows.Forms.PictureBox();
+            this.logoSistema = new System.Windows.Forms.PictureBox();
             this.btnCadastro = new System.Windows.Forms.Button();
             this.btnAcompanhamento = new System.Windows.Forms.Button();
             this.btnFinan = new System.Windows.Forms.Button();
@@ -41,8 +41,8 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoTeste)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCapa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoSistema)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -76,25 +76,24 @@
             this.btnClose.TabStop = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // pictureBox3
+            // imgCapa
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(-325, -4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(763, 457);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.imgCapa.Image = ((System.Drawing.Image)(resources.GetObject("imgCapa.Image")));
+            this.imgCapa.Location = new System.Drawing.Point(-325, -4);
+            this.imgCapa.Name = "imgCapa";
+            this.imgCapa.Size = new System.Drawing.Size(763, 457);
+            this.imgCapa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgCapa.TabIndex = 3;
+            this.imgCapa.TabStop = false;
             // 
-            // pictureBox4
+            // logoSistema
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(517, 12);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(195, 120);
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
+            this.logoSistema.Image = ((System.Drawing.Image)(resources.GetObject("logoSistema.Image")));
+            this.logoSistema.Location = new System.Drawing.Point(517, 12);
+            this.logoSistema.Name = "logoSistema";
+            this.logoSistema.Size = new System.Drawing.Size(195, 120);
+            this.logoSistema.TabIndex = 4;
+            this.logoSistema.TabStop = false;
             // 
             // btnCadastro
             // 
@@ -109,7 +108,7 @@
             this.btnCadastro.Text = "cadastro";
             this.btnCadastro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCadastro.UseVisualStyleBackColor = true;
-            this.btnCadastro.Click += new System.EventHandler(this.button1_Click);
+            this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
             // 
             // btnAcompanhamento
             // 
@@ -139,7 +138,7 @@
             this.btnFinan.Text = "financeiro";
             this.btnFinan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnFinan.UseVisualStyleBackColor = true;
-            this.btnFinan.Click += new System.EventHandler(this.button3_Click);
+            this.btnFinan.Click += new System.EventHandler(this.btnFinanceiro_Click);
             // 
             // label1
             // 
@@ -163,10 +162,10 @@
             this.Controls.Add(this.btnFinan);
             this.Controls.Add(this.btnAcompanhamento);
             this.Controls.Add(this.btnCadastro);
-            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.logoSistema);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.imgCapa);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Menu01";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -175,8 +174,8 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.logoTeste)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCapa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoSistema)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,8 +185,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox logoTeste;
         private System.Windows.Forms.PictureBox btnClose;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox imgCapa;
+        private System.Windows.Forms.PictureBox logoSistema;
         private System.Windows.Forms.Button btnCadastro;
         private System.Windows.Forms.Button btnAcompanhamento;
         private System.Windows.Forms.Button btnFinan;

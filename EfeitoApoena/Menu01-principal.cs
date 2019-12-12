@@ -23,40 +23,37 @@ namespace EfeitoApoena
             InitializeComponent();
         }
 
-        private void Menu01_Load(object sender, EventArgs e) { // carregamento da interface
+        private void Menu01_Load(object sender, EventArgs e) { // carregamento da janela principal
+
             stringConexao = "Server = 127.0.0.1; Port = 4107; Database = postgres; User Id = postgres; Password = 123"; // 4 - preenchimento da string
             conexao.ConnectionString = stringConexao; // envio da string para a classe de acesso
 
         }
-
-
-        private void btnClose_Click(object sender, EventArgs e) { //botão de fechar
+        
+        private void btnClose_Click(object sender, EventArgs e) { // botão de fechar
 
             this.Close();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e) // botão de fechar
-        {
-            
-        }
+        private void btnCadastro_Click(object sender, EventArgs e) { // botão para janela de cadastro
 
-       
-        private void button1_Click(object sender, EventArgs e)
-        {
             Menu02_cadastro FormCadastro = new Menu02_cadastro();
             FormCadastro.ShowDialog();
-
         }
+        
+        private void btnAcompanhamento_Click(object sender, EventArgs e){ //botão para janela de acompanhamento
 
-        private void btnAcompanhamento_Click(object sender, EventArgs e)
-        {
             Menu03_acompanhamento FormCadastro = new Menu03_acompanhamento();
             FormCadastro.ShowDialog();
         }
 
-        private void logoTeste_Click(object sender, EventArgs e) {
+        private void btnFinanceiro_Click(object sender, EventArgs e) { //botão para janela do financeiro
 
-            try { // 6 - tentativa de acesso
+        }
+
+        private void logoTeste_Click(object sender, EventArgs e) { //teste de conexão com o banco
+
+            try { 
                 conexao.Open();
             }
             catch {
@@ -69,21 +66,6 @@ namespace EfeitoApoena
             }
 
         }
-
-        private void pictureBox3_Click(object sender, EventArgs e) {
-
-        }
-
-
-
-        private void button3_Click(object sender, EventArgs e) {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e) {
-
-        }
-
 
     }
 }
