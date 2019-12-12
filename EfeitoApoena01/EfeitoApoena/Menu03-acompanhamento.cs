@@ -21,5 +21,10 @@ namespace EfeitoApoena
         {
             this.Close();
         }
+
+        private void txtbNomeBusca_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
