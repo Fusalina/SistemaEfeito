@@ -22,19 +22,6 @@ namespace EfeitoApoena
             InitializeComponent();
         }
 
-        private void txtbNome_TextChanged(object sender, EventArgs e)
-        {
-            /*(txtbNome.Enabled = false;
-                if (txtbNome.Enabled == false)
-                {
-                this.txtbNome.BackColor = Color.LightGray;
-                }else
-                {
-                this.txtbNome.BackColor = Color.DarkGray;
-                }
-            */
-        }
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -43,6 +30,47 @@ namespace EfeitoApoena
         private void Menu02_cadastro_Load(object sender, EventArgs e)
         {
 
+        }
+
+        //Limpar ao clicar
+        private void txtbNome_Clear(object sender, EventArgs e) {
+            txtbNome.Text = String.Empty;
+        }
+        
+        private void txtbDataNasc_clear(object sender, EventArgs e) {
+            txtbDataNasc.Text = String.Empty;
+        }
+
+        private void txtbCpf_clear(object sender, EventArgs e) {
+            txtbCpf.Text = String.Empty;
+        }
+
+        private void txtbEmail_clear(object sender, EventArgs e) {
+            txtbEmail.Text = String.Empty;
+        }
+
+        private void txtbTel1_clear(object sender, EventArgs e) {
+            txtbTel1.Text = String.Empty;
+        }
+
+        private void txtbTel2_clear(object sender, EventArgs e) {
+            txtbTel2.Text = String.Empty;
+        }
+
+        private void txtbRua_clear(object sender, EventArgs e) {
+            txtbRua.Text = String.Empty;
+        }
+
+        private void txtbNRua_clear(object sender, EventArgs e) {
+            txtbNRua.Text = String.Empty;
+        }
+
+        private void txtbBairro_clear(object sender, EventArgs e) {
+            txtbBairro.Text = String.Empty;
+        }
+
+        private void txtbCidade_clear(object sender, EventArgs e) {
+            txtbCidade.Text = String.Empty;
         }
     }
 }
