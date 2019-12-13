@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-//Adição das bibliotecas de banco de dados
 using Npgsql;
 using NpgsqlTypes;
 
@@ -16,6 +14,9 @@ namespace EfeitoApoena
 {
     public partial class Menu02_cadastro : Form
     {
+
+        Conexao con = new Conexao();
+
         public Menu02_cadastro()
         {
             InitializeComponent();
