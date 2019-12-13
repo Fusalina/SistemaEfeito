@@ -16,6 +16,8 @@ namespace EfeitoApoena
         private int numCasa;
         private string bairro;
         private string cidade;
+        private int id_Aluno;
+        private int id_Personal;
 
         private string StringdeConexao;
 
@@ -26,6 +28,8 @@ namespace EfeitoApoena
         public int NumCasa { get => numCasa; set => numCasa = value; }
         public string Bairro { get => bairro; set => bairro = value; }
         public string Cidade { get => cidade; set => cidade = value; }
+        public int Id_Aluno { get => id_Aluno; set => id_Aluno = value; }
+        public int Id_Personal { get => id_Personal; set => id_Personal = value; }
 
         //Construtor: conecta com o banco de dados
         public Endereco()
@@ -46,7 +50,7 @@ namespace EfeitoApoena
                 using (NpgsqlCommand comando = new NpgsqlCommand())
                 {
                     comando.Connection = conexaocombd;//atribui uma conexão ao comando
-
+                    Id_Aluno = AlunoClass.IdAluno;
                     //comando que será executado
                     comando.CommandText = "INSERT INTO endereco(rua , numero , bairro , cidade , id_aluno) " +
                         "values(@rua , @numero , @bairro , @cidade , @id_aluno) ";
@@ -56,14 +60,14 @@ namespace EfeitoApoena
                     comando.Parameters.AddWithValue("numero", NumCasa);
                     comando.Parameters.AddWithValue("bairro", Bairro);
                     comando.Parameters.AddWithValue("cidade", Cidade);
-                    comando.Parameters.AddWithValue("id_aluno", AlunoClass.IdAluno);
+                    comando.Parameters.AddWithValue("id_aluno", Id_Aluno);
 
                     //Executa o comando
                     comando.ExecuteNonQuery();
                 }
                 using (NpgsqlCommand comando = new NpgsqlCommand("SELECT DISTINCT idendereco,id_aluno endereco WHERE id_aluno = @id_aluno ", conexaocombd)) //comando de seleção
                 {
-                    comando.Parameters.AddWithValue("id_aluno", AlunoClass.IdAluno);
+                    comando.Parameters.AddWithValue("id_aluno", Id_Aluno);
 
                     using (NpgsqlDataReader reader = comando.ExecuteReader()) //executa o comando que retornará uma tabela
                     {
