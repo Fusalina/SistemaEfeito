@@ -15,8 +15,6 @@ namespace EfeitoApoena
     public partial class Menu02_cadastro : Form
     {
 
-        Conexao con = new Conexao();
-
         public Menu02_cadastro()
         {
             InitializeComponent();
@@ -49,12 +47,12 @@ namespace EfeitoApoena
             txtbEmail.Text = String.Empty;
         }
 
-        private void txtbTel1_clear(object sender, EventArgs e) {
-            txtbTel1.Text = String.Empty;
+        private void txtbTel_clear(object sender, EventArgs e) {
+            txtbTel.Text = String.Empty;
         }
 
-        private void txtbTel2_clear(object sender, EventArgs e) {
-            txtbTel2.Text = String.Empty;
+        private void txtbCel_clear(object sender, EventArgs e) {
+            txtbCel.Text = String.Empty;
         }
 
         private void txtbRua_clear(object sender, EventArgs e) {
@@ -71,6 +69,11 @@ namespace EfeitoApoena
 
         private void txtbCidade_clear(object sender, EventArgs e) {
             txtbCidade.Text = String.Empty;
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

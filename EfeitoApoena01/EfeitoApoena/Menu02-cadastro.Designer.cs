@@ -35,8 +35,8 @@
             this.txtbDataNasc = new System.Windows.Forms.TextBox();
             this.txtbCpf = new System.Windows.Forms.TextBox();
             this.txtbEmail = new System.Windows.Forms.TextBox();
-            this.txtbTel1 = new System.Windows.Forms.TextBox();
-            this.txtbTel2 = new System.Windows.Forms.TextBox();
+            this.txtbTel = new System.Windows.Forms.TextBox();
+            this.txtbCel = new System.Windows.Forms.TextBox();
             this.txtbNRua = new System.Windows.Forms.TextBox();
             this.txtbRua = new System.Windows.Forms.TextBox();
             this.txtbCidade = new System.Windows.Forms.TextBox();
@@ -56,6 +56,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSalvar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -136,29 +137,29 @@
             this.txtbEmail.Text = "E-mail";
             this.txtbEmail.Click += new System.EventHandler(this.txtbEmail_clear);
             // 
-            // txtbTel1
+            // txtbTel
             // 
-            this.txtbTel1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtbTel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbTel1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtbTel1.Location = new System.Drawing.Point(18, 254);
-            this.txtbTel1.Name = "txtbTel1";
-            this.txtbTel1.Size = new System.Drawing.Size(289, 22);
-            this.txtbTel1.TabIndex = 9;
-            this.txtbTel1.Text = "Telefone 1";
-            this.txtbTel1.Click += new System.EventHandler(this.txtbTel1_clear);
+            this.txtbTel.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtbTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbTel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtbTel.Location = new System.Drawing.Point(18, 254);
+            this.txtbTel.Name = "txtbTel";
+            this.txtbTel.Size = new System.Drawing.Size(289, 22);
+            this.txtbTel.TabIndex = 9;
+            this.txtbTel.Text = "Telefone";
+            this.txtbTel.Click += new System.EventHandler(this.txtbTel_clear);
             // 
-            // txtbTel2
+            // txtbCel
             // 
-            this.txtbTel2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtbTel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbTel2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtbTel2.Location = new System.Drawing.Point(313, 254);
-            this.txtbTel2.Name = "txtbTel2";
-            this.txtbTel2.Size = new System.Drawing.Size(291, 22);
-            this.txtbTel2.TabIndex = 10;
-            this.txtbTel2.Text = "Telefone 2";
-            this.txtbTel2.Click += new System.EventHandler(this.txtbTel2_clear);
+            this.txtbCel.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtbCel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbCel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtbCel.Location = new System.Drawing.Point(313, 254);
+            this.txtbCel.Name = "txtbCel";
+            this.txtbCel.Size = new System.Drawing.Size(291, 22);
+            this.txtbCel.TabIndex = 10;
+            this.txtbCel.Text = "Celular";
+            this.txtbCel.Click += new System.EventHandler(this.txtbCel_clear);
             // 
             // txtbNRua
             // 
@@ -383,11 +384,24 @@
             this.panel1.Size = new System.Drawing.Size(74, 27);
             this.panel1.TabIndex = 18;
             // 
+            // btnSalvar
+            // 
+            this.btnSalvar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnSalvar.Location = new System.Drawing.Point(438, 386);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(111, 46);
+            this.btnSalvar.TabIndex = 23;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
             // Menu02_cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.groupBox3);
@@ -397,8 +411,8 @@
             this.Controls.Add(this.txtbBairro);
             this.Controls.Add(this.txtbNRua);
             this.Controls.Add(this.txtbRua);
-            this.Controls.Add(this.txtbTel2);
-            this.Controls.Add(this.txtbTel1);
+            this.Controls.Add(this.txtbCel);
+            this.Controls.Add(this.txtbTel);
             this.Controls.Add(this.txtbEmail);
             this.Controls.Add(this.txtbCpf);
             this.Controls.Add(this.txtbDataNasc);
@@ -434,8 +448,8 @@
         private System.Windows.Forms.TextBox txtbDataNasc;
         private System.Windows.Forms.TextBox txtbCpf;
         private System.Windows.Forms.TextBox txtbEmail;
-        private System.Windows.Forms.TextBox txtbTel1;
-        private System.Windows.Forms.TextBox txtbTel2;
+        private System.Windows.Forms.TextBox txtbTel;
+        private System.Windows.Forms.TextBox txtbCel;
         private System.Windows.Forms.TextBox txtbNRua;
         private System.Windows.Forms.TextBox txtbRua;
         private System.Windows.Forms.TextBox txtbCidade;
@@ -455,5 +469,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnSalvar;
     }
 }
