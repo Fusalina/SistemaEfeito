@@ -64,6 +64,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_click);
             // 
             // pictureBox3
             // 
@@ -78,11 +79,11 @@
             // TitCadastroAluno
             // 
             this.TitCadastroAluno.AutoSize = true;
-            this.TitCadastroAluno.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TitCadastroAluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TitCadastroAluno.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.TitCadastroAluno.Location = new System.Drawing.Point(12, 9);
             this.TitCadastroAluno.Name = "TitCadastroAluno";
-            this.TitCadastroAluno.Size = new System.Drawing.Size(162, 36);
+            this.TitCadastroAluno.Size = new System.Drawing.Size(162, 33);
             this.TitCadastroAluno.TabIndex = 22;
             this.TitCadastroAluno.Text = "Financeiro";
             // 
@@ -108,41 +109,41 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(14, 65);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(303, 22);
+            this.label1.Size = new System.Drawing.Size(280, 24);
             this.label1.TabIndex = 26;
             this.label1.Text = "Projeção de Lucro do Mês Atual";
             // 
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(323, 65);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(271, 24);
+            this.textBox1.Size = new System.Drawing.Size(271, 22);
             this.textBox1.TabIndex = 27;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label2.Location = new System.Drawing.Point(12, 109);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 22);
+            this.label2.Size = new System.Drawing.Size(157, 24);
             this.label2.TabIndex = 28;
             this.label2.Text = "Lista de Credores";
             // 
             // textBox2
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(185, 109);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(409, 24);
+            this.textBox2.Size = new System.Drawing.Size(409, 22);
             this.textBox2.TabIndex = 29;
             // 
             // Tela01_financeiro

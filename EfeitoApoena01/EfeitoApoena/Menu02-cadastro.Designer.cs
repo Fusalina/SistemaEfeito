@@ -158,6 +158,7 @@
             this.txtbTel2.Size = new System.Drawing.Size(291, 22);
             this.txtbTel2.TabIndex = 10;
             this.txtbTel2.Text = "Telefone 2";
+            this.txtbTel2.Click += new System.EventHandler(this.txtbTel2_clear);
             // 
             // txtbNRua
             // 

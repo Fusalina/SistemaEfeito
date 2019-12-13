@@ -17,14 +17,13 @@ namespace EfeitoApoena
             InitializeComponent();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void txtbNomeBusca_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox2_click(object sender, EventArgs e) {
+            this.Close();
         }
     }
 }

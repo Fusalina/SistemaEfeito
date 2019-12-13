@@ -99,7 +99,7 @@
             // 
             this.btnCadastro.FlatAppearance.BorderSize = 0;
             this.btnCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastro.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastro.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnCadastro.Location = new System.Drawing.Point(444, 183);
             this.btnCadastro.Name = "btnCadastro";
@@ -108,13 +108,13 @@
             this.btnCadastro.Text = "cadastro";
             this.btnCadastro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCadastro.UseVisualStyleBackColor = true;
-            this.btnCadastro.Click += new System.EventHandler(this.button1_Click);
+            this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
             // 
             // btnAcompanhamento
             // 
             this.btnAcompanhamento.FlatAppearance.BorderSize = 0;
             this.btnAcompanhamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAcompanhamento.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcompanhamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcompanhamento.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnAcompanhamento.Location = new System.Drawing.Point(444, 230);
             this.btnAcompanhamento.Name = "btnAcompanhamento";
@@ -129,7 +129,7 @@
             // 
             this.btnFinan.FlatAppearance.BorderSize = 0;
             this.btnFinan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFinan.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinan.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnFinan.Location = new System.Drawing.Point(444, 277);
             this.btnFinan.Name = "btnFinan";
@@ -138,16 +138,16 @@
             this.btnFinan.Text = "financeiro";
             this.btnFinan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnFinan.UseVisualStyleBackColor = true;
-            this.btnFinan.Click += new System.EventHandler(this.button3_Click);
+            this.btnFinan.Click += new System.EventHandler(this.btnFinan_click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.label1.Location = new System.Drawing.Point(559, 123);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 19);
+            this.label1.Size = new System.Drawing.Size(122, 20);
             this.label1.TabIndex = 8;
             this.label1.Text = "sistema efeito";
             this.label1.Click += new System.EventHandler(this.label1_Click);

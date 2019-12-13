@@ -60,11 +60,11 @@
             // TitCadastroAluno
             // 
             this.TitCadastroAluno.AutoSize = true;
-            this.TitCadastroAluno.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TitCadastroAluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TitCadastroAluno.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.TitCadastroAluno.Location = new System.Drawing.Point(12, 9);
             this.TitCadastroAluno.Name = "TitCadastroAluno";
-            this.TitCadastroAluno.Size = new System.Drawing.Size(283, 36);
+            this.TitCadastroAluno.Size = new System.Drawing.Size(265, 33);
             this.TitCadastroAluno.TabIndex = 6;
             this.TitCadastroAluno.Text = "Acompanhamento";
             // 
@@ -274,11 +274,11 @@
             this.txtbNomeBusca.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtbNomeBusca.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtbNomeBusca.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtbNomeBusca.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbNomeBusca.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbNomeBusca.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.txtbNomeBusca.Location = new System.Drawing.Point(18, 70);
             this.txtbNomeBusca.Name = "txtbNomeBusca";
-            this.txtbNomeBusca.Size = new System.Drawing.Size(414, 24);
+            this.txtbNomeBusca.Size = new System.Drawing.Size(414, 22);
             this.txtbNomeBusca.TabIndex = 7;
             this.txtbNomeBusca.TextChanged += new System.EventHandler(this.txtbNomeBusca_TextChanged);
             // 
@@ -286,7 +286,7 @@
             // 
             this.btnNtreino.FlatAppearance.BorderSize = 0;
             this.btnNtreino.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNtreino.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNtreino.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNtreino.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnNtreino.Location = new System.Drawing.Point(12, 178);
             this.btnNtreino.Name = "btnNtreino";
@@ -300,7 +300,7 @@
             // 
             this.btnAvaliac.FlatAppearance.BorderSize = 0;
             this.btnAvaliac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAvaliac.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAvaliac.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAvaliac.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnAvaliac.Location = new System.Drawing.Point(12, 234);
             this.btnAvaliac.Name = "btnAvaliac";
@@ -314,7 +314,7 @@
             // 
             this.btnConmpare.FlatAppearance.BorderSize = 0;
             this.btnConmpare.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConmpare.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConmpare.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConmpare.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnConmpare.Location = new System.Drawing.Point(12, 290);
             this.btnConmpare.Name = "btnConmpare";
@@ -328,7 +328,7 @@
             // 
             this.btnSelAlunoAcomp.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnSelAlunoAcomp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelAlunoAcomp.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelAlunoAcomp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelAlunoAcomp.ForeColor = System.Drawing.SystemColors.Control;
             this.btnSelAlunoAcomp.Location = new System.Drawing.Point(438, 70);
             this.btnSelAlunoAcomp.Name = "btnSelAlunoAcomp";
@@ -355,6 +355,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_click);
             // 
             // pictureBox3
             // 

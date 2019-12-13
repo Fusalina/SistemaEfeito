@@ -32,21 +32,15 @@ namespace EfeitoApoena
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
+        private void btnCadastro_Click(object sender, EventArgs e) {
+
             Menu02_cadastro FormCadastro = new Menu02_cadastro();
             FormCadastro.ShowDialog();
-
         }
 
         private void btnAcompanhamento_Click(object sender, EventArgs e)
@@ -54,5 +48,12 @@ namespace EfeitoApoena
             Menu03_acompanhamento FormCadastro = new Menu03_acompanhamento();
             FormCadastro.ShowDialog();
         }
+
+        private void btnFinan_click(object sender, EventArgs e) {
+            Tela01_financeiro FormCadastro = new Tela01_financeiro();
+            FormCadastro.ShowDialog();
+        }
+
+
     }
 }

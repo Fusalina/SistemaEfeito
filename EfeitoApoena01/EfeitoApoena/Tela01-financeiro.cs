@@ -16,5 +16,9 @@ namespace EfeitoApoena
         {
             InitializeComponent();
         }
+
+        private void pictureBox2_click(object sender, EventArgs e) {
+            this.Close();
+        }
     }
 }
