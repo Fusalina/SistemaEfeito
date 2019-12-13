@@ -77,7 +77,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aluno.cs" />
+    <Compile Include="Avaliacao.cs" />
     <Compile Include="Conexao.cs" />
+    <Compile Include="Endereco.cs" />
+    <Compile Include="Exercicios.cs" />
+    <Compile Include="Medidas.cs" />
     <Compile Include="Menu01-principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +101,9 @@
     <Compile Include="Menu03-acompanhamento.Designer.cs">
       <DependentUpon>Menu03-acompanhamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pagamentos.cs" />
+    <Compile Include="Personal.cs" />
+    <Compile Include="Plano.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tela01-financeiro.cs">
@@ -104,6 +112,7 @@
     <Compile Include="Tela01-financeiro.Designer.cs">
       <DependentUpon>Tela01-financeiro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Treino.cs" />
     <EmbeddedResource Include="Menu01-principal.resx">
       <DependentUpon>Menu01-principal.cs</DependentUpon>
     </EmbeddedResource>
